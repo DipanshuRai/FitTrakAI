@@ -1,0 +1,113 @@
+/* Base styles for the modal */
+.auth-modal-content {
+    max-width: 425px;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tabs styles */
+  .tabs-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tabs-list button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .tabs-list button[data-state="active"] {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  /* Form container */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* Form field styles */
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form-field label {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .form-field input {
+    padding: 0.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+  }
+  
+  /* Submit button */
+  .submit-button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .submit-button:disabled {
+    background-color: #d1d5db;
+    cursor: not-allowed;
+  }
+  
+  .submit-button:hover:not(:disabled) {
+    background-color: #2563eb;
+  }
+  
+  /* Test credentials */
+  .test-credentials {
+    font-size: 0.875rem;
+    color: #6b7280;
+    text-align: center;
+  }
+  
+  /* Select styles */
+  .select-trigger {
+    padding: 0.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+  
+  .select-content {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .select-item {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+  
+  .select-item:hover {
+    background-color: #f3f4f6;
+  }
